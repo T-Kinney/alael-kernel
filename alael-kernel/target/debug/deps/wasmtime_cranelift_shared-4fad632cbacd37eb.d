@@ -1,0 +1,8 @@
+C:\dev\zion-citadel\alael-kernel\target\debug\deps\wasmtime_cranelift_shared-4fad632cbacd37eb.d: C:\Users\tkinn\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\wasmtime-cranelift-shared-12.0.2\src\lib.rs C:\Users\tkinn\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\wasmtime-cranelift-shared-12.0.2\src\isa_builder.rs C:\Users\tkinn\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\wasmtime-cranelift-shared-12.0.2\src\obj.rs C:\Users\tkinn\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\wasmtime-cranelift-shared-12.0.2\src\compiled_function.rs
+
+C:\dev\zion-citadel\alael-kernel\target\debug\deps\libwasmtime_cranelift_shared-4fad632cbacd37eb.rmeta: C:\Users\tkinn\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\wasmtime-cranelift-shared-12.0.2\src\lib.rs C:\Users\tkinn\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\wasmtime-cranelift-shared-12.0.2\src\isa_builder.rs C:\Users\tkinn\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\wasmtime-cranelift-shared-12.0.2\src\obj.rs C:\Users\tkinn\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\wasmtime-cranelift-shared-12.0.2\src\compiled_function.rs
+
+C:\Users\tkinn\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\wasmtime-cranelift-shared-12.0.2\src\lib.rs:
+C:\Users\tkinn\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\wasmtime-cranelift-shared-12.0.2\src\isa_builder.rs:
+C:\Users\tkinn\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\wasmtime-cranelift-shared-12.0.2\src\obj.rs:
+C:\Users\tkinn\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\wasmtime-cranelift-shared-12.0.2\src\compiled_function.rs:

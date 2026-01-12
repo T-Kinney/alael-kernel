@@ -1,0 +1,12 @@
+C:\dev\zion-citadel\alael-kernel\target\debug\deps\ittapi-50743ace21f7120a.d: C:\Users\tkinn\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ittapi-0.3.5\src\lib.rs C:\Users\tkinn\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ittapi-0.3.5\src\collection_control.rs C:\Users\tkinn\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ittapi-0.3.5\src\domain.rs C:\Users\tkinn\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ittapi-0.3.5\src\event.rs C:\Users\tkinn\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ittapi-0.3.5\src\jit.rs C:\Users\tkinn\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ittapi-0.3.5\src\string.rs C:\Users\tkinn\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ittapi-0.3.5\src\task.rs C:\Users\tkinn\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ittapi-0.3.5\src\util.rs
+
+C:\dev\zion-citadel\alael-kernel\target\debug\deps\libittapi-50743ace21f7120a.rmeta: C:\Users\tkinn\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ittapi-0.3.5\src\lib.rs C:\Users\tkinn\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ittapi-0.3.5\src\collection_control.rs C:\Users\tkinn\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ittapi-0.3.5\src\domain.rs C:\Users\tkinn\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ittapi-0.3.5\src\event.rs C:\Users\tkinn\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ittapi-0.3.5\src\jit.rs C:\Users\tkinn\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ittapi-0.3.5\src\string.rs C:\Users\tkinn\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ittapi-0.3.5\src\task.rs C:\Users\tkinn\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ittapi-0.3.5\src\util.rs
+
+C:\Users\tkinn\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ittapi-0.3.5\src\lib.rs:
+C:\Users\tkinn\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ittapi-0.3.5\src\collection_control.rs:
+C:\Users\tkinn\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ittapi-0.3.5\src\domain.rs:
+C:\Users\tkinn\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ittapi-0.3.5\src\event.rs:
+C:\Users\tkinn\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ittapi-0.3.5\src\jit.rs:
+C:\Users\tkinn\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ittapi-0.3.5\src\string.rs:
+C:\Users\tkinn\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ittapi-0.3.5\src\task.rs:
+C:\Users\tkinn\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ittapi-0.3.5\src\util.rs:
