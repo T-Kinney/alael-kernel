@@ -1,34 +1,47 @@
-//! Alael Kernel - Zion Citadel Primary Orchestrator (v0.1.0).
-//! Boots the system and enforces ethical constants.
+//! Alael Kernel v0.2.0 - Zion Citadel Orchestrator.
+//! Boots, enforces ethics, validates tokens.
 
-mod ethics; // Links to our ethics.rs file
+mod ethics;
+use ethics::{EthicalConstants, PermissionToken};
+use log::{info, error};
+use std::time::{SystemTime, UNIX_EPOCH};
 
-use ethics::EthicalConstants;
-use log::{info, error}; // For structured logging
-
-#[tokio::main] // Makes main async (for future multi-tasking like agents)
+#[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
-    // Initialize logging (outputs to console with levels)
     env_logger::init();
     info!("🚀 Alael Kernel Booting...");
 
-    // Load immutable ethical constants
+    // Load ethics
     let ethics = EthicalConstants::default();
-    info!("📜 Ethical Constants Loaded: {:?}", ethics);
+    info!("📜 Ethical Constants: {:?}", ethics);
 
-    info!("🔄 Entering main orchestration loop (placeholder).");
-
-    // Test: Enforce a core rule
-    if ethics.no_civilian_targets {
-        info!("✅ ETHICAL RULE ENFORCED: Civilian targets FORBIDDEN (per dossier).");
+    // Test core rule
+    if ethics.no_innocent_civilians {
+        info!("✅ RULE: Innocents protected. Verified predators OK post-scoring.");
     } else {
-        error!("❌ KERNEL INTEGRITY COMPROMISED: Civilians targetable—SHUTDOWN!");
-        return Err("Ethical violation detected".into()); // Halts execution
+        error!("❌ ETHICS BREACH: Innocents targetable—SHUTDOWN!");
+        return Err("Ethical failure".into());
     }
 
-    // Simulate a short "loop" (replace with real agent management later)
+    // Token test
+    let now = SystemTime::now().duration_since(UNIX_EPOCH)?.as_secs();
+    let test_token = PermissionToken {
+        action: "passive_scrape".to_string(),
+        target: "discord.threat_channel".to_string(),
+        expires_at: now + ethics.token_lifespan_seconds,
+        signature: "sha256(ethics+action)".to_string(),
+    };
+    info!("🔑 Testing token: {:?}", test_token);
+    if test_token.is_valid(&ethics, now) {
+        info!("✅ TOKEN APPROVED: Passive action on verified threat.");
+    } else {
+        error!("❌ TOKEN REJECTED: Ethics/expiry fail.");
+    }
+
+    info!("🏗️ Wasm sandbox stub ready.");
+
     tokio::time::sleep(tokio::time::Duration::from_secs(3)).await;
-    info!("🛑 Kernel test complete. Ready for token system.");
+    info!("🛑 Kernel v0.2.0 ready.");
 
     Ok(())
 }
