@@ -30,8 +30,9 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     if test_token.is_valid(&ethics, now) {
         info!("✅ TOKEN APPROVED.");
         // Raziel scrape (gated by token)
-        let intel = raziel::scrape_threat_channel("discord.com/predator_channel");
-        info!("🧠 Raziel Report: {}", intel);
+            let intel = raziel::scrape_threat_channel("discord.com/threat_channel").await;
+    info!("🧠 Raziel Report: {}", intel);
+
     }
 
     tokio::time::sleep(tokio::time::Duration::from_secs(3)).await;
