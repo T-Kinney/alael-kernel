@@ -6,7 +6,8 @@ mod vehuel;
 mod seraphiel;
 mod metatron;
 mod barachiel;
-mod sandalphon;  // New
+mod sandalphon;
+mod hanael;
 use ethics::{EthicalConstants, PermissionToken};
 use log::{info, error};
 use std::time::{SystemTime, UNIX_EPOCH};
@@ -56,6 +57,8 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
             // Barachiel personas
             let persona = barachiel::deploy_persona("discord.threat_channel", risk);
             info!("🧑 Barachiel Personas: {}", persona);
+            let logistics = hanael::spin_dccp_task("fuzz_channel", risk);
+            info!("🏭 Hanael Logistics: {}", logistics);
         } else {
             error!("❌ LOW RISK: Monitor.");
         }
