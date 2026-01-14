@@ -1,11 +1,12 @@
-//! Alael Kernel v1.0.0 - Milestone: + Barachiel personas.
+//! Alael Kernel v1.1.0 - + Sandalphon passive monitoring.
 
 mod ethics;
 mod raziel;
 mod vehuel;
 mod seraphiel;
 mod metatron;
-mod barachiel;  // New
+mod barachiel;
+mod sandalphon;  // New
 use ethics::{EthicalConstants, PermissionToken};
 use log::{info, error};
 use std::time::{SystemTime, UNIX_EPOCH};
@@ -13,7 +14,7 @@ use std::time::{SystemTime, UNIX_EPOCH};
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
     env_logger::init();
-    info!("🚀 Alael Kernel v1.0.0 Booting... Milestone!");
+    info!("🚀 Alael Kernel v1.1.0 Booting...");
 
     let ethics = EthicalConstants::default();
     info!("📜 Ethical Constants: {:?}", ethics);
@@ -27,7 +28,11 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     };
     info!("🔑 Token: {:?}", test_token);
     if test_token.is_valid(&ethics, now) {
-        info!("✅ TOKEN APPROVED - Full Pipeline start.");
+        info!("✅ TOKEN APPROVED - Pipeline start.");
+
+        // Sandalphon early warning (passive grid)
+        let monitor = sandalphon::monitor_channel("discord.threat_channel");
+        info!("📡 Sandalphon Monitor: {}", monitor);
 
         // Raziel scrape
         let intel = raziel::scrape_threat_channel("discord.com/threat_channel").await;
@@ -57,7 +62,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     }
 
     tokio::time::sleep(tokio::time::Duration::from_secs(3)).await;
-    info!("🛑 v1.0.0 ready: Personas online. 6/9 Angels.");
+    info!("🛑 v1.1.0 ready: Sandalphon online. 7/9 Angels.");
 
     Ok(())
 }
